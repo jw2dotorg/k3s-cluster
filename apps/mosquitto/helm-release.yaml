@@ -21,10 +21,10 @@ spec:
       tag: v2.0.14
     service:
       main:
-        type: LoadBalancer
-        externalIPs:
-          - "${SVC_MOSQUITTO_ADDR}"
-        externalTrafficPolicy: Local
+        #type: LoadBalancer
+        #externalIPs:
+        #  - "${SVC_MOSQUITTO_ADDR}"
+        #externalTrafficPolicy: Local
         ports:
           http:
             enabled: false
