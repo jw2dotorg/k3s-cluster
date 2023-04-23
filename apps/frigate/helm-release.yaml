@@ -74,6 +74,13 @@ spec:
         enabled: true
         existingClaim: frigate-config-v1
         mountPath: /data
+      config:
+        enabled: true
+        type: configMap
+        name: frigate-config
+        subPath: config.yml
+        mountPath: /config/config.yml
+        readOnly: true
       media:
         enabled: true
         type: custom
