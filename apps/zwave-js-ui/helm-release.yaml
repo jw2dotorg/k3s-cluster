@@ -64,6 +64,8 @@ spec:
         tls:
         - hosts:
           - "z.${SECRET_DOMAIN}"
+    securityContext:
+      privileged: true
     persistence:
       config:
         enabled: true
