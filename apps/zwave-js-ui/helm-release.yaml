@@ -66,12 +66,11 @@ spec:
           - "z.${SECRET_DOMAIN}"
     securityContext:
       privileged: true
-    volumeClaimTemplates:
-      - name: config
-        mountPath: /usr/src/app/store
-        accessMode: ReadWriteOnce
-        size: 1Gi
     persistence:
+      config:
+        enabled: true
+        mountPath: /usr/src/app/store
+        existingClaim: zwave-js-ui-config
       usb:
         enabled: true
         type: hostPath
