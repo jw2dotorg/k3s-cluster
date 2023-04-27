@@ -66,13 +66,12 @@ spec:
           - "z.${SECRET_DOMAIN}"
     securityContext:
       privileged: true
-    persistence:
-      config:
-        enabled: true
+    volumeClaimTemplates:
+      - name: config
         mountPath: /usr/src/app/store
         accessMode: ReadWriteOnce
-        size: "1Gi"
-        skipuninstall: true
+        size: 1Gi
+    persistence:
       usb:
         enabled: true
         type: hostPath
