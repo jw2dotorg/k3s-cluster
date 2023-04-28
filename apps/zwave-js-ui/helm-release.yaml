@@ -62,8 +62,9 @@ spec:
           - path: /
             pathType: Prefix
         tls:
-        - hosts:
-          - "z.${SECRET_DOMAIN}"
+          - secretName: zwave-js-ui-tls
+            hosts:
+              - "z.${SECRET_DOMAIN}"
     securityContext:
       privileged: true
     persistence:
