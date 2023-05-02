@@ -191,6 +191,8 @@ spec:
               streams:
                 doorbell:
                   - rtsp://admin:${FRIGATE_DOORBELL_PASSWORD}@doorbell.jw2.org/
+                doorbell-front:
+                  - rtsp://view:${FRIGATE_RTSP_PASSWORD}@cam-doorbell.jw2.org/
 
             cameras:
               garage:
