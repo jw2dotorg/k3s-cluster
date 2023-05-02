@@ -121,7 +121,7 @@ spec:
         gpu.intel.com/i915: 1
         memory: 3000Mi
 
-    configmap:
+    configMaps:
       config:
         enabled: true
         data:
@@ -308,10 +308,10 @@ spec:
                   order: 8
                 ffmpeg:
                   inputs:
-                    - path: rtsp://admin:${FRIGATE_RTSP_PASSWORD}@cam-doorbell.${SECRET_DOMAIN}/h264Preview_01_sub
+                    - path: rtsp://view:${FRIGATE_RTSP_PASSWORD}@cam-doorbell.${SECRET_DOMAIN}/h264Preview_01_sub
                       roles:
                         - detect
-                    - path: rtsp://admin:${FRIGATE_RTSP_PASSWORD}@cam-doorbell.${SECRET_DOMAIN}/h264Preview_01_main
+                    - path: rtsp://view:${FRIGATE_RTSP_PASSWORD}@cam-doorbell.${SECRET_DOMAIN}/h264Preview_01_main
                       roles:
                         - record
                         - rtmp
