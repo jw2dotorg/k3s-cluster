@@ -98,7 +98,7 @@ spec:
           nginx.ingress.kubernetes.io/ssl-redirect: "true"
           nginx.ingress.kubernetes.io/backend-protocol: "GRPC"
         hosts:
-          - &host-thanos-sidecar "thanos-sidecar.${DOMAIN}"
+          - &host-thanos-sidecar "thanos-sidecar.${SECRET_DOMAIN}"
         tls:
           - hosts:
               - *host-thanos-sidecar
