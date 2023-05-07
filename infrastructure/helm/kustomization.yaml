@@ -5,3 +5,4 @@ resources:
   - jetstack.yaml
   - prometheus-community.yaml
   - node-feature-discovery.yaml
+  - intel.yaml
