@@ -4,3 +4,4 @@ resources:
   - bjw-s.yaml
   - jetstack.yaml
   - prometheus-community.yaml
+  - node-feature-discovery.yaml
