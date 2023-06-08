@@ -86,8 +86,11 @@ spec:
         type: custom
         volumeSpec:
           nfs:
-            server: "${NAS_ADDR}"
-            path: /volume1/frigate
+            #server: "${NAS_ADDR}"
+            #path: /volume1/frigate
+            # Temp move
+            server: "172.16.0.186"
+            path: /mnt/pool1/frigate
         mountPath: /media
       usb:
         enabled: true
