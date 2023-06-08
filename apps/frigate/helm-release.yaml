@@ -178,11 +178,13 @@ spec:
               enabled: True
               retain:
                 days: 30
-                mode: motion
+                #mode: motion
+                mode: all
               events:
                 retain:
                   default: 30
-                  mode: motion
+                  #mode: motion
+                  mode: all
 
             snapshots:
               enabled: True
