@@ -4,6 +4,7 @@ metadata:
   name: democratic-csi
   namespace: democratic-csi
 spec:
+  interval: 5m
   releaseName: democratic-csi
   chart:
     spec:
@@ -11,10 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: democratic-csi
-  interval: 5m
-  install:
-    remediation:
-      retries: 3
+        namespace: flux-system
   values:
     driver:
       config:
