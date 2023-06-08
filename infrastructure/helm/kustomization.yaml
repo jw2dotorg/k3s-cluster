@@ -6,3 +6,4 @@ resources:
   - prometheus-community.yaml
   - node-feature-discovery.yaml
   - intel.yaml
+  - democratic-csi.yaml
