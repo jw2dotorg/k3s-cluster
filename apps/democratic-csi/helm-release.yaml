@@ -47,7 +47,7 @@ spec:
     
     storageClasses:
       - name: truenas
-        defaultClass: true
+        defaultClass: false
         reclaimPolicy: Retain
         volumeBindingMode: Immediate
         allowVolumeExpansion: true
