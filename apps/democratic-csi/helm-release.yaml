@@ -19,7 +19,7 @@ spec:
         driver: freenas-api-nfs
         httpConnection:
           protocol: http
-          apikey: "1-Q8mSojre2Sh9CdHSPrOIGVx8qohww8Tr7DXLWodLzCmysTXN1Z3S20lInxJqqtic"
+          apiKey: "1-Q8mSojre2Sh9CdHSPrOIGVx8qohww8Tr7DXLWodLzCmysTXN1Z3S20lInxJqqtic"
           host: 172.16.0.186
           port: 80
           allowInsecure: true
