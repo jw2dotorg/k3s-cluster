@@ -32,6 +32,8 @@ spec:
           datasetPermissionsMode: "0777"
           datasetPermissionsUser: 0
           datasetPermissionsGroup: 0
+          cli:
+            sudoEnabled: true
         nfs:
           shareCommentTemplate: "{{ parameters.[csi.storage.k8s.io/pvc/namespace] }}-{{ parameters.[csi.storage.k8s.io/pvc/name] }}"
           shareHost: 172.16.0.186
