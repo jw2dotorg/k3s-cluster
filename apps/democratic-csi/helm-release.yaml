@@ -19,8 +19,9 @@ spec:
         driver: freenas-api-nfs
         httpConnection:
           protocol: http
-          username: k8s
-          password: k8s
+          apikey: 1-Q8mSojre2Sh9CdHSPrOIGVx8qohww8Tr7DXLWodLzCmysTXN1Z3S20lInxJqqtic
+          #username: k8s
+          #password: k8s
           host: 172.16.0.186
           port: 80
           allowInsecure: true
