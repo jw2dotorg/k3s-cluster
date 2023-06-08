@@ -19,9 +19,7 @@ spec:
         driver: freenas-api-nfs
         httpConnection:
           protocol: http
-          apikey: 1-Q8mSojre2Sh9CdHSPrOIGVx8qohww8Tr7DXLWodLzCmysTXN1Z3S20lInxJqqtic
-          #username: k8s
-          #password: k8s
+          apikey: "1-Q8mSojre2Sh9CdHSPrOIGVx8qohww8Tr7DXLWodLzCmysTXN1Z3S20lInxJqqtic"
           host: 172.16.0.186
           port: 80
           allowInsecure: true
@@ -33,8 +31,6 @@ spec:
           datasetPermissionsMode: "0777"
           datasetPermissionsUser: 0
           datasetPermissionsGroup: 0
-          cli:
-            sudoEnabled: true
         nfs:
           shareCommentTemplate: "{{ parameters.[csi.storage.k8s.io/pvc/namespace] }}-{{ parameters.[csi.storage.k8s.io/pvc/name] }}"
           shareHost: 172.16.0.186
