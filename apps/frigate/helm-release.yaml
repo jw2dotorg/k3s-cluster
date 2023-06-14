@@ -177,12 +177,14 @@ spec:
             record:
               enabled: True
               retain:
-                days: 30
+                days: 5
+                #days: 30
                 #mode: motion
                 mode: all
               events:
                 retain:
-                  default: 30
+                  default: 5
+                  #default: 30
                   #mode: motion
                   mode: all
 
