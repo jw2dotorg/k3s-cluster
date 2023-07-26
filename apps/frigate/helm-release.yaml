@@ -220,6 +220,9 @@ spec:
                     - dog
                     - cat
                     - bicycle
+                motion:
+                  mask:
+                    - 1033,153,1061,169,1067,133,1041,123
               backyard:
                 ui: 
                   order: 5
