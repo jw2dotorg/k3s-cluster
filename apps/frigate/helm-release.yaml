@@ -22,7 +22,7 @@ spec:
       TZ: America/New_York
     image:
       repository: ghcr.io/blakeblackshear/frigate
-      tag: 0.12.0
+      tag: 0.12.1
     service:
       main:
         ports:
@@ -86,11 +86,11 @@ spec:
         type: custom
         volumeSpec:
           nfs:
-            #server: "${NAS_ADDR}"
-            #path: /volume1/frigate
+            server: "${NAS_ADDR}"
+            path: /volume1/frigate
             # TrueNAS Temp move
-            server: "172.16.0.186"
-            path: /mnt/pool1/frigate
+            # server: "172.16.0.186"
+            # path: /mnt/pool1/frigate
         mountPath: /media
       usb:
         enabled: true
