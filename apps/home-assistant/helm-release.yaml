@@ -19,6 +19,18 @@ spec:
     image:
       repository: homeassistant/home-assistant
       tag: 2023.10
+    service:
+      main:
+        ports:
+          http:
+            port: 8123
+    probes:
+      startup:
+        enabled: false
+      readiness:
+        enabled: true
+      liveness:
+        enabled: true
     ingress:
       main:
         enabled: true
