@@ -138,6 +138,9 @@ spec:
             database:
               path: /data/frigate-new.db
 
+            ui:
+              use_experimental: true
+
             detectors:
               coral:
                 type: edgetpu
