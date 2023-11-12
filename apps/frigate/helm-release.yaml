@@ -161,7 +161,7 @@ spec:
             ffmpeg:
               hwaccel_args:
                 - -hwaccel
-                - preset-intel-qsv-h264
+                - qsv
                 - -hwaccel_device
                 - /dev/dri/renderD128
                 - -hwaccel_output_format
