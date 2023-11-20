@@ -70,10 +70,15 @@ spec:
     securityContext:
       privileged: true
     persistence:
-      #data:
-      #  enabled: true
+      data:
+        enabled: true
       #  existingClaim: frigate-config-v1
       #  mountPath: /data
+        type: custom
+        volumeSpec:
+          nfs:
+            server: "172.16.0.11"
+            path: /saspool1/frigate
       config:
         enabled: true
         type: configMap
