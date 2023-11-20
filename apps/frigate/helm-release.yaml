@@ -70,10 +70,10 @@ spec:
     securityContext:
       privileged: true
     persistence:
-      data:
-        enabled: true
-        existingClaim: frigate-config-v1
-        mountPath: /data
+      #data:
+      #  enabled: true
+      #  existingClaim: frigate-config-v1
+      #  mountPath: /data
       config:
         enabled: true
         type: configMap
