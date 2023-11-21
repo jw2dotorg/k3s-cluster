@@ -301,6 +301,14 @@ spec:
                 motion:
                   mask:
                     - 662,377,668,720,528,720,564,374
+                objects:
+                  filters:
+                    dog:
+                      mask:
+                        - 662,377,668,720,528,720,564,374
+                    person:
+                      mask:
+                        - 662,377,668,720,528,720,564,374
               doorbell-back:
                 ui: 
                   order: 7
