@@ -288,6 +288,12 @@ spec:
                     - path: rtsp://view:${FRIGATE_RTSP_PASSWORD}@cam-sidegarage.${SECRET_DOMAIN}/live
                       roles:
                         - record
+                detect:
+                  width: 2688
+                  height: 1520
+                record:
+                  width: 2688
+                  height: 1520
                 zones:
                   neighbors_driveway:
                     coordinates: 0,0,0,424,719,0
